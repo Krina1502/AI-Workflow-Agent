@@ -1,0 +1,31 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: sans-serif; background: #0f0f0f; color: #eee; }
+
+.app { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+header h1 { font-size: 1.4rem; }
+nav { display: flex; gap: 8px; }
+nav button { padding: 8px 16px; border: 1px solid #444; background: #1a1a1a; color: #eee; border-radius: 6px; cursor: pointer; }
+nav button.active { background: #6c63ff; border-color: #6c63ff; }
+
+.card { background: #1a1a1a; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.card h2 { font-size: 1.2rem; }
+.card h3 { font-size: 1rem; margin-top: 8px; color: #aaa; }
+
+input, select { padding: 10px; border-radius: 6px; border: 1px solid #333; background: #111; color: #eee; width: 100%; }
+button { padding: 10px 20px; background: #6c63ff; color: white; border: none; border-radius: 6px; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.messages { display: flex; flex-direction: column; gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #111; border-radius: 8px; }
+.message { padding: 8px 12px; border-radius: 8px; line-height: 1.5; }
+.message.user { background: #2a2a4a; align-self: flex-end; }
+.message.ai { background: #1e2e1e; align-self: flex-start; }
+
+.input-row { display: flex; gap: 8px; }
+.input-row input { flex: 1; }
+
+.status { font-size: 0.9rem; color: #aaa; }
+
+.log-item { background: #111; padding: 10px; border-radius: 6px; font-size: 0.85rem; line-height: 1.6; }
